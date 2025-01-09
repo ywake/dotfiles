@@ -1,0 +1,23 @@
+[core]
+	editor = vim
+[user]
+	name = ywake
+	email = wakey404@gmail.com
+	[includeIf "gitdir:~/dev/drdng/"]
+		path = .gitconfig_drdng
+	[includeIf "gitdir:~/dev/altnode/"]
+		path = .gitconfig_altnode
+	[includeIf "gitdir:~/dev/iai/"]
+		path = .gitconfig_iai
+[pull]
+	rebase = false
+[init]
+	defalutBranch = main
+	defaultBranch = main
+[filter "lfs"]
+	process = git-lfs filter-process --skip
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge --skip -- %f
+[credential]
+	helper = osxkeychain
