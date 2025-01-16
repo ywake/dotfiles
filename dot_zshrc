@@ -26,3 +26,18 @@ zstyle ':prezto:load' pmodule \
 	'utility'
 zinit snippet PZTM::completion # completion for make etc.
 zinit snippet PZTM::utility
+
+# llvm
+function llvm (){
+	LLVM_PATH=`brew --prefix llvm`
+	export PATH="$LLVM_PATH/bin:$PATH"
+	export LDFLAGS="-L$LLVM_PATH/llvm/lib"
+	export CPPFLAGS="-I$LLVM_PATH/include"
+	unset -f llvm
+}
+
+# lang env
+## pyenv
+eval "$(pyenv init -)" # for completion
+## volta
+export PATH="$HOME/.volta/bin:$PATH"
