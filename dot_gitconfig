@@ -1,5 +1,6 @@
 [core]
 	editor = vim
+	excludesfile = /Users/ywake/.gitignore_global
 [user]
 	name = ywake
 	email = wakey404@gmail.com
@@ -12,7 +13,6 @@
 [pull]
 	rebase = false
 [init]
-	defalutBranch = main
 	defaultBranch = main
 [filter "lfs"]
 	process = git-lfs filter-process --skip
