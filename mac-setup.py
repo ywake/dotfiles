@@ -39,7 +39,10 @@ def define_apps() -> list:
 		),
 		Installer(
 			title="Brewfile",
-			commands=["brew bundle --global"],
+			commands=[
+				"sudo -v",
+				"brew bundle --global"
+			],
 			check=None,
 			path_override=brewed_path,
 		),
