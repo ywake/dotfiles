@@ -3,21 +3,27 @@
 	excludesfile = /Users/ywake/.gitignore_global
 [user]
 	name = ywake
-	email = wakey404@gmail.com
+	email = ywake.dev@gmail.com
 	[includeIf "gitdir:~/dev/drdng/"]
 		path = .gitconfig_drdng
 	[includeIf "gitdir:~/dev/altnode/"]
 		path = .gitconfig_altnode
 	[includeIf "gitdir:~/dev/iai/"]
 		path = .gitconfig_iai
+	[includeIf "gitdir:~/dev/almondo/"]
+		path = .gitconfig_almondo
 [pull]
 	rebase = false
 [init]
 	defaultBranch = main
 [filter "lfs"]
-	process = git-lfs filter-process --skip
+	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge --skip -- %f
+	smudge = git-lfs smudge -- %f
+[credential "https://github.com"]
+	username = ywake
 [credential]
-	helper = osxkeychain
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true

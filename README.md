@@ -10,6 +10,20 @@ make copy
 chezmoi apply
 ```
 
+# chezmoi usage
+```bash
+# 追加
+chezmoi add ~/.new_dotfile
+
+# 確認
+chezmoi status
+
+# 適用
+chezmoi apply
+```
+
+
+
 ---
 
 # MacOS Setup

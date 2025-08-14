@@ -7,4 +7,7 @@ REPO_DIR	:= $(HOME)/.local/share/chezmoi
 copy:
 	mkdir -p $(CONF_DIR) && cp -f $(REPO_DIR)/chezmoi.toml $$_
 
+sync:
+	brew bundle dump --global -f
+
 # Note: `$_`: The last argument of the previous command.

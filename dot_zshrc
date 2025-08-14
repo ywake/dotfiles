@@ -28,6 +28,9 @@ zstyle ':prezto:load' pmodule \
 zinit snippet PZTM::completion # completion for make etc.
 zinit snippet PZTM::utility
 
+# homebrew
+export PATH="/opt/homebrew/opt/bison/bin:$PATH"
+
 # llvm
 function llvm (){
 	LLVM_PATH=`brew --prefix llvm`
@@ -45,3 +48,22 @@ eval "$(uv generate-shell-completion zsh)"
 
 # supabase
 autoload -U compinit; compinit
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/ywake/.dart-cli-completion/zsh-config.zsh ]] && . /Users/ywake/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+# Flutter
+export PATH="$HOME/fvm/default/bin:$PATH"
+export CHROME_EXECUTABLE="/Applications/Arc.app/Contents/MacOS/Arc"
+## pub
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# pnpm
+export PNPM_HOME="/Users/ywake/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
