@@ -116,3 +116,22 @@ def myprint(msg: str):
 if __name__ == "__main__":
 	apps: list[Installer] = define_apps()
 	installAll(apps)
+	print("""
+	# 手動設定が必要なところ
+	
+	## Cursor
+	* ショートカット設定（VSCodeで同期した後にCursorを開けば自動でできるかも）
+	* "workbench.activityBar.orientation": "vertical"を設定
+	* 配色のテーマを「ダークモダン」に変更
+
+	### 拡張機能
+	* VSCodeからの拡張機能引き継ぎは不完全（`OpenVSX`にないとダメ？）
+	* VSIXをダウンロードしてインポートする方法をとるしかない
+		1. VSCode上で欲しい拡張機能を右クリック
+		2. 「VSIXをダウンロード」
+		3. Webではなく「すべてのプラットフォーム」を選択してダウンロード
+
+	## Notion
+	* ショートカット「Cmd+Shift+K」	が被ってるので別にする
+	  - 「コマンド検索の使用」をOFFにしてショートカット無効でいいかも
+	""")
