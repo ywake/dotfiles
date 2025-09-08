@@ -1,6 +1,6 @@
 [core]
 	editor = vim
-	excludesfile = /Users/ywake/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [user]
 	name = ywake
 	email = ywake.dev@gmail.com
