@@ -1,0 +1,196 @@
+{
+    "docker.languageserver.formatter.ignoreMultilineInstructions": true,
+    "better-comments.highlightPlainText": true,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "editor.suggestSelection": "first",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "[cpp]": {},
+    "dart.debugExternalLibraries": false,
+    "42header.username": "ywake",
+    "update.showReleaseNotes": false,
+    "nrf-connect.welcome.showOnStartup": false,
+    "editor.insertSpaces": false,
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.formatOnType": true,
+        "diffEditor.ignoreTrimWhitespace": true,
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "remote.ssh.useLocalServer": true,
+    "git.autofetch": true,
+    "dart.debugSdkLibraries": false,
+    "editor.accessibilitySupport": "off",
+    "security.workspace.trust.untrustedFiles": "open",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "arduino.defaultBaudRate": 9600,
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "autoDocstring.docstringFormat": "sphinx",
+    "arduino.useArduinoCli": true,
+    "go.languageServerExperimentalFeatures": {
+        "documentLink": true,
+        "diagnostics": true
+    },
+    "todo-tree.filtering.excludeGlobs": [
+        "node_modules/"
+    ],
+    "go.toolsManagement.autoUpdate": true,
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "go.useLanguageServer": true,
+    "nrf-connect.enableTelemetry": false,
+    "files.exclude": {
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.classpath": true,
+        "**/.factorypath": true
+    },
+    "html.format.extraLiners": "",
+    "editor.renderWhitespace": "all",
+    "explorer.confirmDragAndDrop": false,
+    "remote.SSH.enableRemoteCommand": true,
+    "arduino.enableUSBDetection": true,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "clang-format.fallbackStyle": "Google",
+    "42header.email": "ywake@student.42tokyo.jp",
+    "workbench.startupEditor": "newUntitledFile",
+    "todo-tree.highlights.enabled": true,
+    "go.autocompleteUnimportedPackages": true,
+    "editor.fontSize": 20,
+    "dart.showInspectorNotificationsForWidgetErrors": false,
+    "editor.minimap.enabled": false,
+    "arduino.additionalUrls": [
+        "http://arduino.esp8266.com/stable/package_esp8266com_index.json"
+    ],
+    "python.jediPath": "languageServer=Jedi",
+    "C_Cpp.formatting": "clangFormat",
+    "git.confirmSync": false,
+    "dart.devToolsBrowser": "default",
+    "todo-tree.tree.showScanModeButton": false,
+    "arduino.commandPath": "arduino-cli",
+    "codam-norminette-3.regex": "^(?:(?!test).)*?\\.[ch]$",
+    "editor.wordWrap": "on",
+    "explorer.confirmDelete": false,
+    "dart.debugExternalPackageLibraries": false,
+    "arduino.path": "/usr/local/bin",
+    "editor.rulers": [
+        80
+    ],
+    "terminal.integrated.fontSize": 20,
+    "dart.openDevTools": "flutter",
+    "dart.previewLsp": true,
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "idf.espIdfPath": "/Users/wakey/esp/esp-idf",
+    "idf.pythonBinPath": "/Users/wakey/.espressif/python_env/idf4.4_py3.9_env/bin/python",
+    "idf.toolsPath": "/Users/wakey/.espressif",
+    "idf.customExtraPaths": "/Users/wakey/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf/bin:/Users/wakey/.espressif/tools/xtensa-esp32s2-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32s2-elf/bin:/Users/wakey/.espressif/tools/xtensa-esp32s3-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32s3-elf/bin:/Users/wakey/.espressif/tools/riscv32-esp-elf/esp-2021r2-patch3-8.4.0/riscv32-esp-elf/bin:/Users/wakey/.espressif/tools/esp32ulp-elf/2.28.51-esp-20191205/esp32ulp-elf-binutils/bin:/Users/wakey/.espressif/tools/esp32s2ulp-elf/2.28.51-esp-20191205/esp32s2ulp-elf-binutils/bin:/Users/wakey/.espressif/tools/cmake/3.20.3/CMake.app/Contents/bin:/Users/wakey/.espressif/tools/openocd-esp32/v0.11.0-esp32-20211220/openocd-esp32/bin:/Users/wakey/.espressif/tools/ninja/1.10.2",
+    "idf.customExtraVars": "{\"OPENOCD_SCRIPTS\":\"/Users/wakey/.espressif/tools/openocd-esp32/v0.11.0-esp32-20211220/openocd-esp32/share/openocd/scripts\"}",
+    "idf.gitPath": "git",
+    "cmake.configureOnOpen": true,
+    "editor.inlineSuggest.enabled": true,
+    "C/C++ Include Guard.Macro Type": "Filename",
+    "C/C++ Include Guard.Suffix": "_H__",
+    "C/C++ Include Guard.Prefix": "__",
+    "C/C++ Include Guard.Header Extensions": [
+        ".h"
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    "githubPullRequests.pullBranch": "never",
+    "extensions.ignoreRecommendations": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": true,
+        "c": true
+    },
+    "githubPullRequests.fileListLayout": "flat",
+    "gitlens.liveshare.allowGuestAccess": false,
+    "lldb.library": "/Applications/Xcode-16.2.0.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+    "lldb.launch.expressions": "native",
+    "editor.inlineSuggest.showToolbar": "always",
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.chat.localeOverride": "en",
+    "[javascript]": {
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "always"
+        }
+    },
+    "debug.console.fontFamily": "SF Mono, Apple Color Emoji",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.checkUpdates": true,
+    "clangd.onConfigChanged": "restart",
+    "unreal-clangd.compileCommands.architecture": "arm64",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "files.associations": {
+        "*.toml": "toml"
+    },
+    "editor.fontFamily": "SF Mono, Apple Color Emoji, Menlo, Monaco, 'Courier New', monospace",
+    "files.insertFinalNewline": true,
+    "[json]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "clangd.inactiveRegions.useBackgroundHighlight": true,
+    "clang-tidy.executable": "/opt/homebrew/opt/llvm/bin/clang-tidy",
+    "unreal-clangd.creation.compilerPath": "/opt/homebrew/opt/llvm/bin/clangd",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "workbench.activityBar.orientation": "vertical",
+    "workbench.colorTheme": "Default Dark Modern",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "cursor.cpp.disabledLanguages": [],
+    "cursor.composer.shouldChimeAfterChatFinishes": true,
+    "window.commandCenter": true,
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "markdown.preview.scrollEditorWithPreview": false,
+}

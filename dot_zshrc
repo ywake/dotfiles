@@ -67,3 +67,14 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# python
+## pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+
+source ~/.safe-chain/scripts/init-posix.sh # Safe-chain Zsh initialization script
+
+# claude
+PATH="$HOME/.local/bin:$PATH"

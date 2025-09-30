@@ -10,4 +10,10 @@ copy:
 sync:
 	brew bundle dump --global -f
 
+apply:
+	chezmoi apply
+
+list:
+	chezmoi list
+
 # Note: `$_`: The last argument of the previous command.
