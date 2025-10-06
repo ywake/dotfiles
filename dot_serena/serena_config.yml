@@ -78,4 +78,6 @@ token_count_estimator: TIKTOKEN_GPT4O
 # 初回アクティベーションのためにSerenaにパスでプロジェクトをアクティベートするよう指示してください。
 # 注意：登録されたプロジェクトの名前に名前の衝突がないことを確認してください。
 projects:
+- /Users/wake_yuki/dev/almondo/pj_leadcreate_assessmentsystem_phase2
+- /Users/wake_yuki/dev/almondo/pj_leadcreate_assessmentsystem_phase2-2
 - /Users/wake_yuki/dev/almondo/pj_ttdc_system_phase5-2/app
