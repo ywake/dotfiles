@@ -1,4 +1,4 @@
-model = "gpt-5-codex"
+model = "gpt-5.1-codex-max"
 model_reasoning_effort = "medium"
 sandbox_mode = "workspace-write"
 notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
@@ -16,6 +16,7 @@ args = ["-y", "@upstash/context7-mcp@latest"]
 [mcp_servers.serena]
 command = "uvx"
 args = ["--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "codex"]
+startup_timeout_sec = 60
 
 [mcp_servers.chrome-devtools]
 command = "npx"
@@ -38,5 +39,11 @@ args = ["chrome-devtools-mcp@latest"]
 
 [mcp_servers.spec-workflow]
 command = "npx"
-args = ["-y", "@pimzino/spec-workflow-mcp@latest", "/Users/wake_yuki/dev/almondo/pj_ttdc_system_phase5/app"]
-# args = ["-y", "@pimzino/spec-workflow-mcp@latest", "/Users/wake_yuki/dev/almondo/pj_leadcreate_assessmentsystem_phase2/"]
+# args = ["-y", "@pimzino/spec-workflow-mcp@latest", "/Users/wake_yuki/dev/almondo/pj_ttdc_system_phase5/app"]
+# args = ["-y", "@pimzino/spec-workflow-mcp@latest", "/Users/wake_yuki/dev/almondo/pj_leadcreate_assessmentsystem_phase2-3"]
+args = ["-y", "@pimzino/spec-workflow-mcp@latest", "."]
+startup_timeout_sec = 60
+
+[notice]
+hide_gpt5_1_migration_prompt = true
+"hide_gpt-5.1-codex-max_migration_prompt" = true
