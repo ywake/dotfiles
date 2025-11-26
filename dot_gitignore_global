@@ -1,7 +1,6 @@
 Taskfile.ywake.yaml
 cursor_rules/
 .task/
-Taskfile.yaml
 AGENTS.md
 .DS_Store
 compose-*.yaml
