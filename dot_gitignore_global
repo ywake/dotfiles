@@ -4,3 +4,4 @@ cursor_rules/
 AGENTS.md
 .DS_Store
 compose-*.yaml
+__pycache__
