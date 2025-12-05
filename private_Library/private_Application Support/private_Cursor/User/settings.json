@@ -189,7 +189,6 @@
     },
     "cursor.cpp.disabledLanguages": [],
     "cursor.composer.shouldChimeAfterChatFinishes": true,
-    "window.commandCenter": true,
     "markdown.preview.doubleClickToSwitchToEditor": false,
     "markdown.preview.scrollPreviewWithEditor": false,
     "markdown.preview.scrollEditorWithPreview": false,
@@ -207,4 +206,6 @@
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeRepositoryBranchName}",
     "cursor.enable_git_worktrees_setting": true,
     "cursor.agent_layout_browser_beta_setting": true,
+    "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+    "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
 }
