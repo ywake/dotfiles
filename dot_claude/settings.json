@@ -1,0 +1,57 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(git mv:*)",
+      "Bash(pnpm:*)",
+      "Bash(task build)",
+      "Bash(poetry run pytest:*)",
+      "Bash(docker compose logs:*)",
+      "Bash(docker logs:*)",
+      "mcp__serena",
+      "mcp__sequential-thinking"
+    ],
+    "deny": [
+      "mcp__serena__execute_shell_command",
+      "mcp__serena__replace_regex",
+      "Read(.env)",
+      "Read(.env.local)"
+    ],
+    "ask": [
+      "WebFetch",
+      "Bash(curl:*)",
+      "Bash(wget:*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "osascript -e 'display notification \"タスクが完了しました！\" with title \"Claude Code\" sound name \"Glass\"'"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "osascript -e 'display notification \"承認または入力が必要です！\" with title \"Claude Code\" sound name \"Basso\"'"
+          }
+        ]
+      }
+    ]
+  },
+  "mcpServers": {
+    // "figma": {
+    //   "type": "http",
+    //   "url": "https://mcp.figma.com/mcp"
+    // }
+  }
+}

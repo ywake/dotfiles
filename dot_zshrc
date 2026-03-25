@@ -1,0 +1,84 @@
+# zsh
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+# zinit
+## `zinit delete --clean` to clean old plugins
+source /opt/homebrew/opt/zinit/zinit.zsh
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+## pure theme
+zi ice pick"async.zsh" src"pure.zsh"
+zi light sindresorhus/pure
+export VIRTUAL_ENV_DISABLE_PROMPT=1 # disable prompt for virtualenv
+## plugins
+zinit ice blockf atpull'zinit creinstall -q .'
+zinit light zsh-users/zsh-completions
+# zinit light zsh-users/zsh-syntax-highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
+zinit light zsh-users/zsh-history-substring-search
+zinit light zsh-users/zsh-autosuggestions # after zsh-history-substring-search
+autoload compinit
+compinit
+## prezto
+zstyle ':prezto:*:*' color 'yes'
+zstyle ':prezto:load' pmodule \
+	'completion' \
+	'utility'
+zinit snippet PZTM::completion # completion for make etc.
+zinit snippet PZTM::utility
+
+# homebrew
+export PATH="/opt/homebrew/opt/bison/bin:$PATH"
+
+# llvm
+function llvm (){
+	LLVM_PATH=`brew --prefix llvm`
+	export PATH="$LLVM_PATH/bin:$PATH"
+	export LDFLAGS="-L$LLVM_PATH/llvm/lib"
+	export CPPFLAGS="-I$LLVM_PATH/include"
+	unset -f llvm
+}
+
+# lang env
+## volta
+export PATH="$HOME/.volta/bin:$PATH"
+## uv
+eval "$(uv generate-shell-completion zsh)"
+
+# supabase
+autoload -U compinit; compinit
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/ywake/.dart-cli-completion/zsh-config.zsh ]] && . /Users/ywake/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+# Flutter
+export PATH="$HOME/fvm/default/bin:$PATH"
+export CHROME_EXECUTABLE="/Applications/Arc.app/Contents/MacOS/Arc"
+## pub
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# pnpm
+export PNPM_HOME="/Users/ywake/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# python
+## pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+
+source ~/.safe-chain/scripts/init-posix.sh # Safe-chain Zsh initialization script
+
+# claude
+PATH="$HOME/.local/bin:$PATH"
+
+alias gco='git checkout'
+alias gb='git branch'
+alias gcp='git cherry-pick'

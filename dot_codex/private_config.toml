@@ -1,0 +1,61 @@
+model = "gpt-5.5"
+model_reasoning_effort = "low"
+sandbox_mode = "workspace-write"
+notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
+personality = "pragmatic"
+
+
+[projects."~/dev"]
+trust_level = "trusted"
+
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp@latest"]
+
+[mcp_servers.serena]
+command = "uvx"
+args = ["--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "codex"]
+startup_timeout_sec = 60
+
+[mcp_servers.serena.tools.write_memory]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools]
+command = "npx"
+args = ["chrome-devtools-mcp@latest"]
+
+# [mcp_servers.github]
+# command = "mcp-proxy"
+# args = [
+# 	"--transport",
+# 	"streamablehttp",
+# 	"-H",
+# 	"Authorization",
+# 	"Bearer 取得したGitHubのPAT",
+# 	"https://api.githubcopilot.com/mcp/",
+# ]
+
+# [mcp_servers.sequential-thinking]
+# command = "npx"
+# args = ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+
+# [mcp_servers.spec-workflow]
+# command = "npx"
+# args = ["-y", "@pimzino/spec-workflow-mcp@latest", "."]
+# startup_timeout_sec = 60
+
+[mcp_servers.notion]
+url = "https://mcp.notion.com/mcp"
+
+[notice]
+hide_gpt5_1_migration_prompt = true
+"hide_gpt-5.1-codex-max_migration_prompt" = true
+
+[features]
+multi_agent = true
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[apps.connector_76869538009648d5b282a4bb21c3d157]
+enabled = true
