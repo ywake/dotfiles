@@ -82,3 +82,6 @@ PATH="$HOME/.local/bin:$PATH"
 alias gco='git checkout'
 alias gb='git branch'
 alias gcp='git cherry-pick'
+
+# rtk telemetry disable
+export RTK_TELEMETRY_DISABLED=1
