@@ -15,6 +15,8 @@
       "Bash(rtk read *)",
       "Bash(rtk grep *)",
       "Bash(rtk find *)",
+      "Bash(rtk tree *)",
+      "Bash(rtk wc *)",
       "Bash(rtk git status)",
       "Bash(rtk git diff *)",
       "Bash(rtk git log *)",

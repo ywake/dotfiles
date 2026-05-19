@@ -1,11 +1,14 @@
-model = "gpt-5.5"
-model_reasoning_effort = "low"
+model = "gpt-5.4"
+model_reasoning_effort = "medium"
 sandbox_mode = "workspace-write"
 notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
 personality = "pragmatic"
 
 
-[projects."~/dev"]
+[projects."~/dev/almondo/*"]
+trust_level = "trusted"
+
+[projects."~/.agents/skills"]
 trust_level = "trusted"
 
 [mcp_servers.context7]
@@ -57,5 +60,30 @@ multi_agent = true
 [plugins."github@openai-curated"]
 enabled = true
 
+[plugins."browser-use@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
 [apps.connector_76869538009648d5b282a4bb21c3d157]
 enabled = true
+
+[marketplaces.openai-bundled]
+last_updated = "2026-04-30T08:13:40Z"
+source_type = "local"
+source = "/Users/wake_yuki/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-04-30T08:09:54Z"
+source_type = "local"
+source = "/Users/wake_yuki/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+[tui.model_availability_nux]
+"gpt-5.5" = 1

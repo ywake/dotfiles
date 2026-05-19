@@ -211,5 +211,6 @@
     "chatgpt.composerEnterBehavior": "cmdIfMultiline",
     "diffEditor.ignoreTrimWhitespace": false,
     "chatgpt.followUpQueueMode": "queue",
-    "python.languageServer": "None"
+    "python.languageServer": "None",
+    "window.autoDetectColorScheme": false
 }
