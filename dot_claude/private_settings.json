@@ -16,7 +16,6 @@
       "Bash(rtk grep *)",
       "Bash(rtk find *)",
       "Bash(rtk tree *)",
-      "Bash(rtk wc *)",
       "Bash(rtk git status)",
       "Bash(rtk git diff *)",
       "Bash(rtk git log *)",
@@ -41,7 +40,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "osascript -e 'display notification \"タスクが完了しました！\" with title \"Claude Code\" sound name \"Glass\"'"
+            "command": "osascript -e 'display notification \"タスクが完了しました！\" with title \"Claude Code\"' && afplay /System/Library/Sounds/Glass.aiff"
           }
         ]
       }
@@ -51,7 +50,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "osascript -e 'display notification \"承認または入力が必要です！\" with title \"Claude Code\" sound name \"Basso\"'"
+            "command": "osascript -e 'display notification \"承認または入力が必要です！\" with title \"Claude Code\"' && afplay /System/Library/Sounds/Basso.aiff"
           }
         ]
       }
@@ -68,5 +67,10 @@
       }
     ]
   },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {},
+  "effortLevel": "medium",
   "mcpServers": {}
 }

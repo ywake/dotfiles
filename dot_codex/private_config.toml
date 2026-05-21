@@ -72,16 +72,25 @@ enabled = true
 [plugins."presentations@openai-primary-runtime"]
 enabled = true
 
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
 [apps.connector_76869538009648d5b282a4bb21c3d157]
 enabled = true
 
 [marketplaces.openai-bundled]
-last_updated = "2026-04-30T08:13:40Z"
+last_updated = "2026-05-19T04:33:38Z"
 source_type = "local"
 source = "/Users/wake_yuki/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
 [marketplaces.openai-primary-runtime]
-last_updated = "2026-04-30T08:09:54Z"
+last_updated = "2026-05-19T04:25:38Z"
 source_type = "local"
 source = "/Users/wake_yuki/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
 

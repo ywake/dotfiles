@@ -14,6 +14,9 @@ sync:
 apply:
 	chezmoi apply
 
+pull:
+	chezmoi re-add
+
 list:
 	chezmoi list
 
