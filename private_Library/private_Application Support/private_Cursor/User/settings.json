@@ -212,5 +212,11 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "chatgpt.followUpQueueMode": "queue",
     "python.languageServer": "None",
-    "window.autoDetectColorScheme": false
+    "window.autoDetectColorScheme": false,
+    "claudeCode.useCtrlEnterToSend": true,
+    "claudeCode.preferredLocation": "sidebar",
+    "hediet.vscode-drawio.resizeImages": null,
+    "hediet.vscode-drawio.theme": "min",
+    "hediet.vscode-drawio.codeLinkActivated": false,
+    "python.defaultInterpreterPath": "/usr/bin/python3"
 }

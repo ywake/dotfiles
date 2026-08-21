@@ -160,10 +160,6 @@
 		"command": "workbench.action.splitEditorRight"
 	},
 	{
-		"key": "cmd+i",
-		"command": "composerMode.agent"
-	},
-	{
 		"key": "cmd+l",
 		"command": "composerMode.chat"
     },
@@ -194,5 +190,19 @@
 		"key": "cmd+n",
 		"command": "-chatgpt.newChat",
 		"when": "chatgpt.supportsNewChatKeyShortcut"
+	},
+	{
+		"key": "cmd+i",
+		"command": "-composer.startComposerPrompt"
+	},
+	{
+		"key": "cmd+i",
+		"command": "workbench.action.toggleAuxiliaryBar",
+		"when": "!isAuxiliaryWindowFocusedContext"
+	},
+	{
+		"key": "alt+cmd+b",
+		"command": "-workbench.action.toggleAuxiliaryBar",
+		"when": "!isAuxiliaryWindowFocusedContext"
 	}
 ]

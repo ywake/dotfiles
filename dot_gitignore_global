@@ -5,3 +5,8 @@ AGENTS.md
 .DS_Store
 compose-*.yaml
 __pycache__
+.playwright-mcp/
+
+**/.claude/settings.local.json
+**/superpowers/
+**/superpowers/**

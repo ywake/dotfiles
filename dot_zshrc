@@ -85,3 +85,4 @@ alias gcp='git cherry-pick'
 
 # rtk telemetry disable
 export RTK_TELEMETRY_DISABLED=1
+export HEADROOM_TELEMETRY=off
