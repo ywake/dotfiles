@@ -218,5 +218,6 @@
     "hediet.vscode-drawio.resizeImages": null,
     "hediet.vscode-drawio.theme": "min",
     "hediet.vscode-drawio.codeLinkActivated": false,
+    "git.suggestSmartCommit": false,
     "python.defaultInterpreterPath": "/usr/bin/python3"
 }

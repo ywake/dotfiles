@@ -10,3 +10,7 @@ __pycache__
 **/.claude/settings.local.json
 **/superpowers/
 **/superpowers/**
+
+# Ignore ignore directory
+ignore/
+ignore/**
