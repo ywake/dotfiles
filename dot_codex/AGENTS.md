@@ -1,10 +1,7 @@
-# Agent
-- Lanuage
-  - Think & respond in Japanese.
-  - Use Japanese for documentation/comments.
-- use `serena` mcp
-- Markdownの記法を適材適所に幅広く使うことでわかりやすく伝えてください
-- 特に指示がなければ、変更のコスト最小化よりも長期運用の自然さを重視した変更を主にしてください。
-
 # Coding
 - Add comments for each logical block in all code. For implementation code, explain the logic and intent. For tests, clarify what is being tested.
+
+# Write artifacts for the present reader
+- You know the diff; the reader only sees the final state. Change history goes in commits/ADRs — the artifact itself describes only the current state.
+- After writing, re-read as a first-time reader and remove: mentions of things that appear nowhere else in the artifact, diff narration ("previously", "changed to"), and rationale framed against rejected options (rewrite as properties of what was chosen).
+- Exceptions: ADRs, migration guides, changelogs, and warnings about traps readers will actually hit.
