@@ -19,7 +19,6 @@
     ],
     "ask": []
   },
-  "model": "opus",
   "hooks": {
     "Stop": [
       {
@@ -241,6 +240,7 @@
   },
   "tui": "fullscreen",
   "editorMode": "vim",
+  "idleCompaction": false,
   "switchModelsOnFlag": false,
   "agentPushNotifEnabled": true,
   "autoMode": {
@@ -290,6 +290,5 @@
       "**Routine under user prefix**: no `<user>/` branch or namespace prefix convention was evidenced"
     ]
   },
-  "mcpServers": {},
-  "idleCompaction": false
+  "mcpServers": {}
 }
